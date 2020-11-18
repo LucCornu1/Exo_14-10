@@ -1,5 +1,6 @@
 #include "chose.h"
 #include "CPoint.h"
+#include "vecteur3D.h"
 #include <iostream>
 
 using namespace std;
@@ -32,6 +33,47 @@ int main()
 
 	//Exercice 84
 	cout << endl << endl << "Exercice 84" << endl;
+
+	bool b;
+	int X, Y, Z;
+
+
+	//Création de V1
+	cout << "X : ";
+	cin >> X;
+
+	cout << endl << "Y : ";
+	cin >> Y;
+
+	cout << endl << "Z : ";
+	cin >> Z;
+
+	vecteur3D V1(X, Y, Z);
+
+
+	//Création de V2
+	cout << endl << "X : ";
+	cin >> X;
+
+	cout << endl << "Y : ";
+	cin >> Y;
+
+	cout << endl << "Z : ";
+	cin >> Z;
+
+	vecteur3D V2(X, Y, Z);
+
+
+	//Vérification
+	b = (V1 == V2);
+
+	if (b)
+	{
+		cout << "Les deux vecteurs sont egaux" << endl;
+	}
+	else {
+		cout << "Les deux vecteurs ne sont pas egaux" << endl;
+	}
 
 	return 0;
 }

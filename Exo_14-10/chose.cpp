@@ -13,5 +13,5 @@ chose::chose()
 //Destructeur
 chose::~chose()
 {
-	cout << "Destruction objet de type chose" << endl;
+	//cout << "Destruction objet de type chose" << endl;
 }

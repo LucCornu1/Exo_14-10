@@ -16,5 +16,5 @@ public:
 
 
 	//Fonctions membres
-
+	bool operator==(vecteur3D);
 };

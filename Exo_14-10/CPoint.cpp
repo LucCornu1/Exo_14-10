@@ -17,14 +17,14 @@ CPoint::CPoint()
 //Destructeur
 CPoint::~CPoint()
 {
-	cout << "Le point numero : " << m_nCompt << " a ete detruit" << endl;
+	//cout << "Le point numero : " << m_nCompt << " a ete detruit" << endl;
 
 	m_nCompt--;
 }
 
 
 //Fonctions membres
-int CPoint::nombre()
+int CPoint::nombre() const
 //BUT : Fournir à l'utulisateur le nombre de points à un instant donné
 //ENTREE : /
 //SORTIE : Le nombre de points existants

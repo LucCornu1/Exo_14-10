@@ -14,5 +14,5 @@ public:
 	//Destructeur
 	~CPoint();
 
-	int nombre();
+	int nombre() const;
 };
