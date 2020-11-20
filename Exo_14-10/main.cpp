@@ -39,6 +39,7 @@ int main()
 
 
 	//Création de V1
+	cout << "Creation de V1 : " << endl;
 	cout << "X : ";
 	cin >> X;
 
@@ -50,9 +51,12 @@ int main()
 
 	vecteur3D V1(X, Y, Z);
 
+	cout << endl << endl;
+
 
 	//Création de V2
-	cout << endl << "X : ";
+	cout << "Creation de V2 : " << endl;
+	cout << "X : ";
 	cin >> X;
 
 	cout << endl << "Y : ";
@@ -63,11 +67,26 @@ int main()
 
 	vecteur3D V2(X, Y, Z);
 
+	cout << endl << endl;
 
-	//Vérification
+
+	//Vérification ==
+	/*
 	b = (V1 == V2);
 
 	if (b)
+	{
+		cout << "Les deux vecteurs sont egaux" << endl;
+	}
+	else {
+		cout << "Les deux vecteurs ne sont pas egaux" << endl;
+	}
+	*/
+
+	//Vérification !=
+	b = (V1 != V2);
+
+	if (!b)
 	{
 		cout << "Les deux vecteurs sont egaux" << endl;
 	}

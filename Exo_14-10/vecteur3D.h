@@ -16,5 +16,15 @@ public:
 
 
 	//Fonctions membres
+	/*
 	bool operator==(vecteur3D);
+
+	bool operator!=(vecteur3D);
+	*/
+
+
+	//Fonctions amies
+	friend bool operator==(vecteur3D, vecteur3D);
+
+	friend bool operator!=(vecteur3D, vecteur3D);
 };
