@@ -31,4 +31,6 @@ public:
 	friend bool operator!=(vecteur3D&, vecteur3D&);
 
 	friend vecteur3D operator+(vecteur3D&, vecteur3D&);
+
+	friend float operator*(vecteur3D&, vecteur3D&);
 };

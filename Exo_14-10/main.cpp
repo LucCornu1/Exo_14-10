@@ -103,5 +103,9 @@ int main()
 	cout << "Le vecteur V3 est egal a : " << endl;
 	V3.afficheVecteur();
 
+	float flt_S;
+	flt_S = V1 * V2;
+	cout << endl << "Le (produit) Scalaire de V1 par V2 est : " << flt_S << endl;
+
 	return 0;
 }
