@@ -17,14 +17,18 @@ public:
 
 	//Fonctions membres
 	/*
-	bool operator==(vecteur3D);
+	bool operator==(vecteur3D&) const;
 
-	bool operator!=(vecteur3D);
+	bool operator!=(vecteur3D&) const;
 	*/
+
+	void afficheVecteur() const;
 
 
 	//Fonctions amies
-	friend bool operator==(vecteur3D, vecteur3D);
+	friend bool operator==(vecteur3D&, vecteur3D&);
 
-	friend bool operator!=(vecteur3D, vecteur3D);
+	friend bool operator!=(vecteur3D&, vecteur3D&);
+
+	friend vecteur3D operator+(vecteur3D&, vecteur3D&);
 };

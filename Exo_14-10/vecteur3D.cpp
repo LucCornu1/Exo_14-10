@@ -22,29 +22,47 @@ vecteur3D::~vecteur3D()
 
 //Fonctions membres
 /*
-bool vecteur3D::operator==(vecteur3D V)
+bool vecteur3D::operator==(vecteur3D& V) const
 {
 	//cout << "test membre ==" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	return (this->m_fltX == V.m_fltX && this->m_fltY == V.m_fltY && this->m_fltZ == V.m_fltZ);
 }
 
-bool vecteur3D::operator!=(vecteur3D V)
+bool vecteur3D::operator!=(vecteur3D& V) const
 {
 	//cout << "test membre !=" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	return (this->m_fltX != V.m_fltX && this->m_fltY != V.m_fltY && this->m_fltZ != V.m_fltZ);
 }
 */
 
+void vecteur3D::afficheVecteur() const
+{
+	cout << "X = " << this->m_fltX << endl;
+	cout << "Y = " << this->m_fltY << endl;
+	cout << "Z = " << this->m_fltZ << endl;
+}
+
 
 //Fonctions amies
-bool operator==(vecteur3D V1, vecteur3D V2)
+bool operator==(vecteur3D& V1, vecteur3D& V2)
 {
 	//cout << "test amie ==" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	return (V1.m_fltX == V2.m_fltX && V1.m_fltY == V2.m_fltY && V1.m_fltZ == V2.m_fltZ);
 }
 
-bool operator!=(vecteur3D V1, vecteur3D V2)
+bool operator!=(vecteur3D& V1, vecteur3D& V2)
 {
-	cout << "test amie !=" << endl; //Ligne pour vérifier si on passe bien dans la fonction
+	//cout << "test amie !=" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	return (V1.m_fltX != V2.m_fltX && V1.m_fltY != V2.m_fltY && V1.m_fltZ != V2.m_fltZ);
+}
+
+vecteur3D operator+(vecteur3D& V1, vecteur3D& V2)
+{
+	//cout << "test amie +" << endl; //Ligne pour vérifier si on passe bien dans la fonction
+	float X = V1.m_fltX + V2.m_fltX;
+	float Y = V1.m_fltY + V2.m_fltY;
+	float Z = V1.m_fltZ + V2.m_fltZ;
+
+	vecteur3D V(X, Y, Z);
+	return V;
 }

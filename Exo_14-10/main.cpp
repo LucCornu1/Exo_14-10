@@ -94,5 +94,14 @@ int main()
 		cout << "Les deux vecteurs ne sont pas egaux" << endl;
 	}
 
+
+	//Exercice 85
+	cout << endl << endl << "Exercice 85" << endl;
+	//Vérification +
+	vecteur3D V3 = V1 + V2;
+
+	cout << "Le vecteur V3 est egal a : " << endl;
+	V3.afficheVecteur();
+
 	return 0;
 }
