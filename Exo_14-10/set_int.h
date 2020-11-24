@@ -1,0 +1,22 @@
+#pragma once
+
+class set_int
+{
+private:
+	int *m_nAdr;
+	int m_nMax;
+	int m_nElem;
+
+public:
+	//Constructeur
+	set_int(int max = 20);
+
+	//Destructeur
+	~set_int();
+
+
+	//Fonctions membres
+	void add_int(int);
+
+	void afficheSet_int();
+};

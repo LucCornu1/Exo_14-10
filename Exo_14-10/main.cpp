@@ -1,6 +1,7 @@
 #include "chose.h"
 #include "CPoint.h"
 #include "vecteur3D.h"
+#include "set_int.h"
 #include <iostream>
 
 using namespace std;
@@ -29,6 +30,18 @@ int main()
 
 	//Exercice 77
 	cout << endl << endl << "Exercice 77" << endl;
+
+	int n, max;
+	
+	cout << "Veuillez entrer un maximum : ";
+	cin >> max;
+	cout << endl;
+
+	set_int E(max);
+
+	E.add_int(1);
+
+	E.add_int(43);
 
 
 	//Exercice 84
