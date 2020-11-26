@@ -11,6 +11,9 @@ public:
 	//Constructeur
 	set_int(int max = 20);
 
+	//Constructeur par copie
+	set_int(set_int& const);
+
 	//Destructeur
 	~set_int();
 
@@ -18,5 +21,7 @@ public:
 	//Fonctions membres
 	void add_int(int);
 
-	void afficheSet_int();
+	//void afficheSet_int();
+
+	int countSet_int();
 };

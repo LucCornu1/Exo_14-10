@@ -39,9 +39,21 @@ int main()
 
 	set_int E(max);
 
-	E.add_int(1);
+	int nNb, i;
 
-	E.add_int(43);
+	for (i = 0; i < max; i++)
+	{
+		cin >> nNb;
+		E.add_int(nNb);
+	}
+
+	set_int Ep(E);
+
+	int count = Ep.countSet_int();
+
+	cout << endl << "Il y a : " << count << " nombre(s) different(s)" << endl << endl;
+
+	cout << "Pour qu'un objet du type set_int puisse etre transmis par valeur, il faudrait créer un constructeur de copie, pour que l'objet ne soit pas détruit au return d'une fonction" << endl;
 
 
 	//Exercice 84
