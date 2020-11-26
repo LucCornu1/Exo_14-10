@@ -19,9 +19,9 @@ public:
 
 
 	//Fonctions membres
-	void add_int(int);
+	void add_int(int const);
 
 	//void afficheSet_int();
 
-	int countSet_int();
+	int countSet_int() const;
 };

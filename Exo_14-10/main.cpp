@@ -2,6 +2,7 @@
 #include "CPoint.h"
 #include "vecteur3D.h"
 #include "set_int.h"
+#include "vecteur3D_T.h"
 #include <iostream>
 
 using namespace std;
@@ -131,6 +132,22 @@ int main()
 	float flt_S;
 	flt_S = V1 * V2;
 	cout << endl << "Le (produit) Scalaire de V1 par V2 est : " << flt_S << endl;
+
+
+	//Exercice 86
+	cout << endl << endl << "Exercice 86" << endl;
+
+	vecteur3D_T VT1(1.3, 2.0, 3.0);
+
+	float n_86 = 0.0;
+
+	n_86 = VT1[0];
+
+	cout << n_86 << endl;
+
+	VT1[0] = 89.3;
+
+	cout << VT1[0] << endl;
 
 	return 0;
 }

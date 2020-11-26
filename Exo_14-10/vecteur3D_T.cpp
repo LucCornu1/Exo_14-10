@@ -4,17 +4,31 @@
 using namespace std;
 
 //Constructeur
-vecteur3D_T::vecteur3D_T(float fltC1 = 0.0, float fltC2 = 0.0, float fltC3 = 0.0)
+vecteur3D_T::vecteur3D_T(float fltC1, float fltC2, float fltC3)
 {
-	this->m_fltV[1] = fltC1;
-	this->m_fltV[2] = fltC2;
-	this->m_fltV[3] = fltC3;
+	this->m_fltV[0] = fltC1;
+	this->m_fltV[1] = fltC2;
+	this->m_fltV[2] = fltC3;
 
-	//cout << "Creation objet de type vecteur3D" << endl;
+	//cout << "Creation objet de type vecteur3D_T" << endl;
 }
 
 //Destructeur
 vecteur3D_T::~vecteur3D_T()
 {
-	//cout << "Destruction objet de type vecteur3D" << endl;
+	//cout << "Destruction objet de type vecteur3D_T" << endl;
+}
+
+
+//Fonctions membres
+float& vecteur3D_T::operator[](int i)
+{
+	if ((i >= 0) && (i < 3))
+	{
+		return this->m_fltV[i];
+	}
+	else {
+		cerr << "problème avec l'index!\n";
+		exit(1);
+	}
 }

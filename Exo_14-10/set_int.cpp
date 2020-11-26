@@ -28,7 +28,7 @@ set_int::~set_int()
 
 
 //Fonctions membres
-void set_int::add_int(int n)
+void set_int::add_int(int const n)
 {
 	if (this->m_nElem < this->m_nMax)
 	{
@@ -38,7 +38,7 @@ void set_int::add_int(int n)
 	}
 }
 
-int set_int::countSet_int()
+int set_int::countSet_int() const
 {
 	int compt = 1;
 

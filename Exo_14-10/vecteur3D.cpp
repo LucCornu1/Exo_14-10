@@ -44,19 +44,19 @@ void vecteur3D::afficheVecteur() const
 
 
 //Fonctions amies
-bool operator==(vecteur3D& V1, vecteur3D& V2)
+bool operator==(vecteur3D& const V1, vecteur3D& const V2)
 {
 	//cout << "test amie ==" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	return (V1.m_fltX == V2.m_fltX && V1.m_fltY == V2.m_fltY && V1.m_fltZ == V2.m_fltZ);
 }
 
-bool operator!=(vecteur3D& V1, vecteur3D& V2)
+bool operator!=(vecteur3D& const V1, vecteur3D& const V2)
 {
 	//cout << "test amie !=" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	return (V1.m_fltX != V2.m_fltX && V1.m_fltY != V2.m_fltY && V1.m_fltZ != V2.m_fltZ);
 }
 
-vecteur3D operator+(vecteur3D& V1, vecteur3D& V2)
+vecteur3D operator+(vecteur3D& const V1, vecteur3D& const V2)
 {
 	//cout << "test amie +" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	float X = V1.m_fltX + V2.m_fltX;
@@ -67,7 +67,7 @@ vecteur3D operator+(vecteur3D& V1, vecteur3D& V2)
 	return V;
 }
 
-float operator*(vecteur3D& V1, vecteur3D& V2)
+float operator*(vecteur3D& const V1, vecteur3D& const V2)
 {
 	//cout << "test amie *" << endl; //Ligne pour vérifier si on passe bien dans la fonction
 	float Scalaire = V1.m_fltX * V2.m_fltX + V1.m_fltY * V2.m_fltY + V1.m_fltZ * V2.m_fltZ;

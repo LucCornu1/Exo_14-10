@@ -7,8 +7,14 @@ private:
 
 public:
 	//Constructeur
-	vecteur3D_T(float, float, float);
+	vecteur3D_T(float = 0.0, float = 0.0, float = 0.0);
 
 	//Destructeur
 	~vecteur3D_T();
+
+
+	//Fonctions membres
+	float& operator[](int);
+
+	float& operator[](int) const;
 };

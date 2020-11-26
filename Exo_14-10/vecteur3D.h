@@ -26,11 +26,11 @@ public:
 
 
 	//Fonctions amies
-	friend bool operator==(vecteur3D&, vecteur3D&);
+	friend bool operator==(vecteur3D& const, vecteur3D& const);
 
-	friend bool operator!=(vecteur3D&, vecteur3D&);
+	friend bool operator!=(vecteur3D& const, vecteur3D& const);
 
-	friend vecteur3D operator+(vecteur3D&, vecteur3D&);
+	friend vecteur3D operator+(vecteur3D& const, vecteur3D& const);
 
-	friend float operator*(vecteur3D&, vecteur3D&);
+	friend float operator*(vecteur3D& const, vecteur3D& const);
 };
