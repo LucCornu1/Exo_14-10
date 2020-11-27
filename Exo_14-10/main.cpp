@@ -200,5 +200,21 @@ int main()
 		cout << "Faux" << endl;
 	}
 
+
+	//Exercice 89
+	cout << endl << endl << "Exercice 89" << endl;
+
+	//Pour le premier point, voir "PREMIER POINT" dans vecteur3D_T.cpp, ou l'exercice 89
+
+	vecteur3D_T VT2(1.3, 2.0, 3.0);
+
+	float n_89 = 0.0;
+
+	n_89 = VT2[0];
+
+	cout << n_89 << endl;
+
+	//VT2[0] = 159.3; //IMPOSSIBLE, car la surcharge de l'opérateur[] est défini comme étant constante
+
 	return 0;
 }

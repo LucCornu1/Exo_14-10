@@ -14,5 +14,7 @@ public:
 
 
 	//Fonctions membres
-	float& operator[](int);
+	//float& operator[](int);
+
+	float operator[](int) const;
 };

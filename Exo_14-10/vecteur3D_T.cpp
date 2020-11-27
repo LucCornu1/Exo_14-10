@@ -21,7 +21,20 @@ vecteur3D_T::~vecteur3D_T()
 
 
 //Fonctions membres
+/* //PREMIER POINT
 float& vecteur3D_T::operator[](int i)
+{
+	if ((i >= 0) && (i < 3))
+	{
+		return this->m_fltV[i];
+	}
+	else {
+		cout << "Vous êtes hors du tableau" << endl;
+		exit(1);
+	}
+}*/
+
+float vecteur3D_T::operator[](int i) const
 {
 	if ((i >= 0) && (i < 3))
 	{
