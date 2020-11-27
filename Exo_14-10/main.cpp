@@ -3,6 +3,7 @@
 #include "vecteur3D.h"
 #include "set_int.h"
 #include "vecteur3D_T.h"
+#include "vect.h"
 #include <iostream>
 
 using namespace std;
@@ -215,6 +216,31 @@ int main()
 	cout << n_89 << endl;
 
 	//VT2[0] = 159.3; //IMPOSSIBLE, car la surcharge de l'opérateur[] est défini comme étant constante
+
+
+	//Exercice 90
+	cout << endl << endl << "Exercice 90" << endl;
+
+	vect t(3);
+
+	float fltX, fltY, fltZ;
+
+	cout << "Creation du vecteur t : " << endl;
+	cout << "X : ";
+	cin >> fltX;
+
+	cout << endl << "Y : ";
+	cin >> fltY;
+
+	cout << endl << "Z : ";
+	cin >> fltZ;
+
+	t[0] = fltX;
+	t[1] = fltY;
+	t[2] = fltZ;
+
+	cout << endl << "Affichage du vecteur t : " << endl;
+	cout << "X : " << t[0] << endl << "Y : " << t[1] << endl << "Z : " << t[2] << endl;
 
 	return 0;
 }
