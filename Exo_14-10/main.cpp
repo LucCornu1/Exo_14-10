@@ -124,7 +124,8 @@ int main()
 	//Exercice 85
 	cout << endl << endl << "Exercice 85" << endl;
 	//Vérification +
-	vecteur3D V3 = V1 + V2;
+	vecteur3D V3;
+	V3 = V1 + V2;
 
 	cout << "Le vecteur V3 est egal a : " << endl;
 	V3.afficheVecteur();
@@ -148,6 +149,10 @@ int main()
 	VT1[0] = 89.3;
 
 	cout << VT1[0] << endl;
+
+	//Exercice 87
+	cout << endl << endl << "Exercice 87" << endl;
+	
 
 	return 0;
 }

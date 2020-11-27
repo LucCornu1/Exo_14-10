@@ -17,13 +17,19 @@ set_int::set_int(set_int& E)
 {
 	this->m_nElem = E.m_nElem;
 	this->m_nMax = E.m_nMax;
-	this->m_nAdr = E.m_nAdr;
+	this->m_nAdr = new int[this->m_nMax];
+
+	int i;
+	for (i = 0; i < this->m_nElem; i++)
+	{
+		this->m_nAdr[i] = E.m_nAdr[i];
+	}
 }
 
 //Destructeur
 set_int::~set_int()
 {
-	
+	delete[] this->m_nAdr;
 }
 
 
@@ -84,4 +90,17 @@ int set_int::countSet_int() const
 	*/
 
 	return compt;
+}
+
+void set_int::operator=(set_int& E)
+{
+	this->m_nElem = E.m_nElem;
+	this->m_nMax = E.m_nMax;
+	this->m_nAdr = new int[this->m_nMax];
+
+	int i;
+	for (i = 0; i < this->m_nElem; i++)
+	{
+		this->m_nAdr[i] = E.m_nAdr[i];
+	}
 }

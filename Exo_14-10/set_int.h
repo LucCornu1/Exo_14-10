@@ -24,4 +24,6 @@ public:
 	//void afficheSet_int();
 
 	int countSet_int() const;
+
+	void operator=(set_int& const);
 };

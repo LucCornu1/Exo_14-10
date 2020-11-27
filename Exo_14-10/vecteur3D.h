@@ -9,7 +9,7 @@ private:
 
 public:
 	//Constructeur
-	vecteur3D(float, float, float);
+	vecteur3D(float = 0.0, float = 0.0, float = 0.0);
 
 	//Destructeur
 	~vecteur3D();

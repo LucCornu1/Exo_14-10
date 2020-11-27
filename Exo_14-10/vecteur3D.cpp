@@ -4,7 +4,7 @@
 using namespace std;
 
 //Constructeur
-vecteur3D::vecteur3D(float fltC1 = 0.0, float fltC2 = 0.0, float fltC3 = 0.0)
+vecteur3D::vecteur3D(float fltC1, float fltC2, float fltC3)
 {
 	this->m_fltX = fltC1;
 	this->m_fltY = fltC2;
