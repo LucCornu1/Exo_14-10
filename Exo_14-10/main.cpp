@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	//Exercice 74
+	/*//Exercice 74
 	cout << "Exercice 74" << endl;
 	chose x;
 	cout << "Bonjour" << endl;
@@ -42,6 +42,8 @@ int main()
 
 	int nNb, i;
 
+	cout << "Veuillez entrer les valeurs a inserer dans l'ensemble : " << endl;
+
 	for (i = 0; i < max; i++) // Ici on rempli forcément l'ensemble, mais on pourrai s'arrêter avant sans problème avec un while ou en modifiant la valeur max dans la boucle for
 	{
 		cin >> nNb;
@@ -57,7 +59,7 @@ int main()
 	cout << "Pour qu'un objet du type set_int puisse etre transmis par valeur, il faudrait créer un constructeur de copie, pour que l'objet ne soit pas détruit au return d'une fonction" << endl;
 
 
-	/*//Exercice 84
+	//Exercice 84
 	cout << endl << endl << "Exercice 84" << endl;
 
 	bool b;
@@ -148,7 +150,7 @@ int main()
 
 	VT1[0] = 89.3;
 
-	cout << VT1[0] << endl;*/
+	cout << VT1[0] << endl;
 
 
 	//Exercice 87
@@ -162,7 +164,41 @@ int main()
 	E1.afficheSet_int();
 
 	cout << endl << "Affichage de E2 :" << endl;
-	E2.afficheSet_int();
+	E2.afficheSet_int();*/
+
+
+	//Exercice 88
+	cout << endl << endl << "Exercice 88" << endl;
+
+	set_int E3;
+
+	E3 < 2018;
+	E3 < 2019;
+	E3 < 2021;
+	E3 < 2022;
+
+	cout << endl << "Affichage de E3 :" << endl;
+	E3.afficheSet_int();
+
+	cout << endl;
+	
+	cout << "Presence de 2020 dans E3 : ";
+	if (E3[2020])
+	{
+		cout << "Vrai" << endl;
+	}
+	else {
+		cout << "Faux" << endl;
+	}
+	
+	cout << "Presence de 2019 dans E3 : ";
+	if (E3[2019])
+	{
+		cout << "Vrai" << endl;
+	}
+	else {
+		cout << "Faux" << endl;
+	}
 
 	return 0;
 }

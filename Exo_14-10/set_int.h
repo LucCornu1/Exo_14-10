@@ -26,4 +26,8 @@ public:
 	int countSet_int() const;
 
 	set_int& operator=(set_int& const);
+
+	void operator<(int);
+
+	bool operator[](int);
 };

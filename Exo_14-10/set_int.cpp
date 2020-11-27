@@ -119,3 +119,30 @@ void set_int::afficheSet_int()
 		cout << "-- Emplacement " << i << " : " << this->m_nAdr[i] << endl;
 	}
 }
+
+void set_int::operator<(int n)
+{
+	if (this->m_nElem < this->m_nMax)
+	{
+		this->m_nAdr[m_nElem] = n;
+		this->m_nElem++;
+		//cout << this->m_nAdr[m_nElem] << endl;
+	}
+	else {
+		cout << "Vous avez déjà atteint le maximum" << endl;
+	}
+}
+
+bool set_int::operator[](int n)
+{
+	int i;
+	for (i = 0; i < this->m_nElem; i++)
+	{
+		if (this->m_nAdr[i] == n)
+		{
+			return 1;
+		}
+	}
+
+	return 0;
+}
