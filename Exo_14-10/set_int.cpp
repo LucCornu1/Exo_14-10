@@ -116,6 +116,6 @@ void set_int::afficheSet_int()
 	int i;
 	for (i = 0; i < this->m_nElem; i++)
 	{
-		cout << "Emplacement " << i << " : " << this->m_nAdr[i] << endl;
+		cout << "-- Emplacement " << i << " : " << this->m_nAdr[i] << endl;
 	}
 }

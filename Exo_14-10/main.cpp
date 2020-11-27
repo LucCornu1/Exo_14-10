@@ -42,7 +42,7 @@ int main()
 
 	int nNb, i;
 
-	for (i = 0; i < max; i++)
+	for (i = 0; i < max; i++) // Ici on rempli forcément l'ensemble, mais on pourrai s'arrêter avant sans problème avec un while ou en modifiant la valeur max dans la boucle for
 	{
 		cin >> nNb;
 		E.add_int(nNb);
@@ -158,7 +158,10 @@ int main()
 
 	E2 = E1 = E;
 
-	cout << "Affichage de E2 :" << endl << endl;
+	cout << endl << "Affichage de E1 :" << endl;
+	E1.afficheSet_int();
+
+	cout << endl << "Affichage de E2 :" << endl;
 	E2.afficheSet_int();
 
 	return 0;
