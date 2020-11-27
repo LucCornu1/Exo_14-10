@@ -92,7 +92,7 @@ int set_int::countSet_int() const
 	return compt;
 }
 
-void set_int::operator=(set_int& E)
+set_int& set_int::operator=(set_int& E)
 {
 	this->m_nElem = E.m_nElem;
 	this->m_nMax = E.m_nMax;
@@ -102,5 +102,20 @@ void set_int::operator=(set_int& E)
 	for (i = 0; i < this->m_nElem; i++)
 	{
 		this->m_nAdr[i] = E.m_nAdr[i];
+	}
+
+	return *this;
+}
+
+void set_int::afficheSet_int()
+{
+	cout << "Nombre d'elements dans l'ensemble : " << this->m_nElem << endl;
+	cout << "Nombre maximum d'elements dans l'ensemble : " << this->m_nMax << endl;
+	cout << "Liste des nombres de l'ensemble : " << endl;
+
+	int i;
+	for (i = 0; i < this->m_nElem; i++)
+	{
+		cout << "Emplacement " << i << " : " << this->m_nAdr[i] << endl;
 	}
 }

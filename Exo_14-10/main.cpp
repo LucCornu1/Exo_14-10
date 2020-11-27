@@ -57,7 +57,7 @@ int main()
 	cout << "Pour qu'un objet du type set_int puisse etre transmis par valeur, il faudrait créer un constructeur de copie, pour que l'objet ne soit pas détruit au return d'une fonction" << endl;
 
 
-	//Exercice 84
+	/*//Exercice 84
 	cout << endl << endl << "Exercice 84" << endl;
 
 	bool b;
@@ -93,7 +93,7 @@ int main()
 
 	vecteur3D V2(X, Y, Z);
 
-	cout << endl << endl;
+	cout << endl << endl;*/
 
 
 	//Vérification ==
@@ -109,7 +109,7 @@ int main()
 	}
 	*/
 
-	//Vérification !=
+	/*//Vérification !=
 	b = (V1 != V2);
 
 	if (!b)
@@ -148,11 +148,18 @@ int main()
 
 	VT1[0] = 89.3;
 
-	cout << VT1[0] << endl;
+	cout << VT1[0] << endl;*/
+
 
 	//Exercice 87
 	cout << endl << endl << "Exercice 87" << endl;
 	
+	set_int E1, E2;
+
+	E2 = E1 = E;
+
+	cout << "Affichage de E2 :" << endl << endl;
+	E2.afficheSet_int();
 
 	return 0;
 }

@@ -28,7 +28,7 @@ float& vecteur3D_T::operator[](int i)
 		return this->m_fltV[i];
 	}
 	else {
-		cerr << "problème avec l'index!\n";
+		cout << "Vous êtes hors du tableau" << endl;
 		exit(1);
 	}
 }

@@ -21,9 +21,9 @@ public:
 	//Fonctions membres
 	void add_int(int const);
 
-	//void afficheSet_int();
+	void afficheSet_int();
 
 	int countSet_int() const;
 
-	void operator=(set_int& const);
+	set_int& operator=(set_int& const);
 };
