@@ -21,13 +21,17 @@ public:
 	//Fonctions membres
 	void add_int(int const);
 
+	bool search_int(int const) const;
+
+	int cardinal_int() const;
+
 	void afficheSet_int();
 
 	int countSet_int() const;
 
 	set_int& operator=(set_int& const);
 
-	void operator<(int);
+	void operator<(int const);
 
-	bool operator[](int);
+	bool operator[](int const);
 };

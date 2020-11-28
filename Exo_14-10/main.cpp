@@ -29,7 +29,7 @@ int main()
 
 	delete[] tab;
 
-
+	*/
 	//Exercice 77
 	cout << endl << endl << "Exercice 77" << endl;
 
@@ -41,7 +41,7 @@ int main()
 
 	set_int E(max);
 
-	int nNb, i;
+	int nNb, i, cardinal;
 
 	cout << "Veuillez entrer les valeurs a inserer dans l'ensemble : " << endl;
 
@@ -49,6 +49,18 @@ int main()
 	{
 		cin >> nNb;
 		E.add_int(nNb);
+	}
+
+	cardinal = E.cardinal_int();
+
+	cout << "Le cardinal est : " << cardinal << endl;
+
+	if (E.search_int(1))
+	{
+		cout << "Le chiffre 1 est present" << endl;
+	}
+	else {
+		cout << "Le chiffre 1 n'est pas present" << endl;
 	}
 
 	set_int Ep(E);
@@ -59,7 +71,7 @@ int main()
 
 	cout << "Pour qu'un objet du type set_int puisse etre transmis par valeur, il faudrait créer un constructeur de copie, pour que l'objet ne soit pas détruit au return d'une fonction" << endl;
 
-
+	/*
 	//Exercice 84
 	cout << endl << endl << "Exercice 84" << endl;
 

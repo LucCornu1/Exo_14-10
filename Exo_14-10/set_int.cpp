@@ -44,6 +44,26 @@ void set_int::add_int(int const n)
 	}
 }
 
+bool set_int::search_int(int const n) const
+{
+	int i;
+
+	for (i = 0; i < this->m_nElem; i++)
+	{
+		if (this->m_nAdr[i] == n)
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+
+int set_int::cardinal_int() const
+{
+	return this->m_nElem;
+}
+
 int set_int::countSet_int() const
 {
 	int compt = 1;
@@ -120,7 +140,7 @@ void set_int::afficheSet_int()
 	}
 }
 
-void set_int::operator<(int n)
+void set_int::operator<(int const n)
 {
 	if (this->m_nElem < this->m_nMax)
 	{
@@ -133,7 +153,7 @@ void set_int::operator<(int n)
 	}
 }
 
-bool set_int::operator[](int n)
+bool set_int::operator[](int const n)
 {
 	int i;
 	for (i = 0; i < this->m_nElem; i++)
