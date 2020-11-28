@@ -16,6 +16,7 @@ vect::vect(int n)
 //Destructeur
 vect::~vect()
 {
+	delete[] this->m_fltV;
 	//cout << "Destruction objet de type vect" << endl;
 }
 

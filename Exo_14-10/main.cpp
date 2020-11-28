@@ -4,6 +4,7 @@
 #include "set_int.h"
 #include "vecteur3D_T.h"
 #include "vect.h"
+#include "int2d.h"
 #include <iostream>
 
 using namespace std;
@@ -29,7 +30,6 @@ int main()
 
 	delete[] tab;
 
-	*/
 	//Exercice 77
 	cout << endl << endl << "Exercice 77" << endl;
 
@@ -71,7 +71,6 @@ int main()
 
 	cout << "Pour qu'un objet du type set_int puisse etre transmis par valeur, il faudrait créer un constructeur de copie, pour que l'objet ne soit pas détruit au return d'une fonction" << endl;
 
-	/*
 	//Exercice 84
 	cout << endl << endl << "Exercice 84" << endl;
 
@@ -177,7 +176,7 @@ int main()
 	E1.afficheSet_int();
 
 	cout << endl << "Affichage de E2 :" << endl;
-	E2.afficheSet_int();*/
+	E2.afficheSet_int();
 
 
 	//Exercice 88
@@ -228,7 +227,7 @@ int main()
 	cout << n_89 << endl;
 
 	//VT2[0] = 159.3; //IMPOSSIBLE, car la surcharge de l'opérateur[] est défini comme étant constante
-
+	*/
 
 	//Exercice 90
 	cout << endl << endl << "Exercice 90" << endl;
@@ -253,6 +252,24 @@ int main()
 
 	cout << endl << "Affichage du vecteur t : " << endl;
 	cout << "X : " << t[0] << endl << "Y : " << t[1] << endl << "Z : " << t[2] << endl;
+
+
+	//Exercice 91
+	cout << endl << endl << "Exercice 91" << endl;
+
+	int2d R(10, 10);
+
+	R(0, 0) = 32;
+
+	cout << "R(0, 0) = " << R(0, 0) << endl;
+
+	R(0, 1) = 50;
+
+	cout << "R(0, 1) = " << R(0, 1) << endl;
+
+	R(1, 0) = 19;
+
+	cout << "R(1, 0) = " << R(1, 0) << endl;
 
 	return 0;
 }
