@@ -5,6 +5,7 @@
 #include "vecteur3D_T.h"
 #include "vect.h"
 #include "int2d.h"
+#include "histo.h"
 #include <iostream>
 
 using namespace std;
@@ -227,7 +228,7 @@ int main()
 	cout << n_89 << endl;
 
 	//VT2[0] = 159.3; //IMPOSSIBLE, car la surcharge de l'opérateur[] est défini comme étant constante
-	*/
+	
 
 	//Exercice 90
 	cout << endl << endl << "Exercice 90" << endl;
@@ -270,6 +271,27 @@ int main()
 	R(1, 0) = 19;
 
 	cout << "R(1, 0) = " << R(1, 0) << endl;
+	*/
+
+
+	//Exercice 92
+	//IMPORTANT, l'exercice a été complété de manière à démontrer que je sais surcharger les opérateurs. Cependant je n'ai pas compris l'énoncé, j'ai donc modifié certaines fonctions pour ne rien retourner
+	cout << endl << endl << "Exercice 92" << endl;
+
+	histo H(0.0, 10.0, 10);
+
+	int nHisto, nHisto2;
+	cout << "Veuillez enter un nombre entre 0.0 et 10.0 : ";
+	cin >> nHisto;
+	cout << endl;
+
+	H << nHisto;
+
+	cout << "Veuillez enter un nombre entre 0 et 10 : ";
+	cin >> nHisto2;
+	cout << endl;
+
+	H[nHisto2];
 
 	return 0;
 }
